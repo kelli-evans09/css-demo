@@ -1,0 +1,164 @@
+/* body{
+    background-color: lightblue;
+}
+
+#main-heading{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    color: navy;
+}
+
+footer{
+    background-color: blue;
+}
+
+.blog-footer{
+background-color: green;
+}
+
+#blog-footer-page-one{
+    background-color: red;
+} */
+
+/* ## Lightning Exercise Two
+- In your HTML file, between the body tags, create a footer element
+- Give it a class of "blog-footer"
+- Give it an id of "blog-footer-page-one"
+- In `style.css`, select your footer element by its tag name and give it a background color of blue.
+- Select the same footer element by its class of "blog-footer". This time give it a background-color of green.
+- Select the same footer element by its id of "blog-footer-page-one". Give it a background-color of red. */
+/* ******************************************************************************************************************* */
+
+/* ## Lightning Exercise Three
+
+1. In your index.html file, copy and pate the following code:
+
+```html
+<article>
+  <h2>How to Write Really Good HTML</h2>
+  <p>This is the first paragraph.<a href="#">Click here for more details</a></p>
+  <p>This is the second paragraph</p>
+  <p>This is the third paragraph</p>
+  <img src="" alt="" />
+  <a href="#">Another link that's a child of the article!</a>
+  <p>This is the final paragraph</p>
+</article>
+
+2. Select any `a` elements that are inside a `p` element. Make their font color gray.
+3. Select any `p` element that is a directly adjacent sibling of an `h2` element and give it a `background-color` of `lightblue`.
+4. Select any `img` element that is a sibling of a `p` element and give it a `border-radius` of `30%`. (Doesn't need to be a directly adjscent sibling.) (edited)  */
+
+/* p a {
+    color: gray;
+}
+
+h2 + p {
+    background-color: lightblue;
+}
+
+p ~ img {
+    border-radius: 30%;
+} */
+
+/* h2:first-child{
+    font-family: cursive;
+}
+
+article:nth-child(3){
+    background-color: pink;
+}
+
+section article:nth child(3){
+} */
+
+/* /* LIGHTNING EXERCISE Four */
+
+/* 1. Use the same HTML you copied and pasted before.
+2. Use `:first-child` to select the h2 element that is the first child of the article element.
+3. Use `:nth-child()` to select the paragraph element that's third child of the article element. */
+
+/* article h2:first-child{
+    background-color: red;
+}
+
+article:nth-child(3){
+   background-color: yellow;
+} */
+
+header{
+    border-style: solid;
+    border-color: goldenrod;
+    border-width: 1px;
+}
+
+header ul{
+    list-style-type: none;
+    word-spacing: 120px;
+}
+
+header li{
+    display: inline;
+}
+
+.disabled {
+    color: grey;
+}
+
+a .disabled{
+    color: purple;
+}
+
+.active {
+    color:yellow;
+}
+
+article section div div div div:nth-child(1){
+    color:red;
+}
+
+article section div div div div:nth-child(3){
+    color:blue;
+}
+
+article section div div div div:nth-child(1) + h4{
+    background-color: red;
+}
+
+article section div div div div:nth-child(3) + h4{
+    background-color: blue;
+}
+
+/* The header element should have a 1px, goldenrod border.
+Convert the ul in the navigation element into a series of horizontal links with # as the href value, without bullets, and have some space between them horizontally.
+Ensure that the navigation is semantically marked as such (i.e. wrap it in the correct HTML tag).
+Any text in an element with class "disabled" should be colored grey, unless it is an attribute of an anchor tag. If it is an attribute of an anchor tag, it should be colored purple.
+Any text inside an element with a class of "active" should be colored yellow.
+Section elements should be contained within an article element.
+There are two missing closing tags in this document. Make sure you add them back in.
+Make the "I'm red" text colored red.
+Make the "I'm blue" text colored blue.
+The sibling h4 of the red element should have a background color of red.
+/* The sibling h4 of the blue element should have background color of blue. */
+
+.grandparent > h4{
+    border-style: solid;
+    border-color: goldenrod;
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.promo{
+    font-weight: bold;
+    color: gold;
+}
+
+footer span input{
+    height: 25px;
+}
+
+/* Any h4 that is a direct child of grandparent should have a 1px border with rounded corners.
+Elements with a class of promo should have bold text that is also colored gold.
+Without adding any other attributes to the input fields in the footer, write a CSS selector that makes any text input field have a height of 25px.
+Note: You are not allowed to add id and class attributes to any component */
